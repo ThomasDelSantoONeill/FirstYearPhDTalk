@@ -1,1 +1,3 @@
 # FirstYearPhDTalk
+
+This repo contains the material presented at Queen Mary, University of London as part of their 1<sup>st</sup> year PhD talk event. It is also the first time I'm producing slides with <tt>R</tt> so let's see how that goes...
