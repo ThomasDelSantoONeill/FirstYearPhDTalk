@@ -1,0 +1,20 @@
+.gdbar img {
+  width: 300px !important;
+  height: 100px !important;
+  color: red !important;
+}
+
+.gdbar {
+  width: 275px !important;
+  height: 70px !important;
+}
+
+aside.gdbar {
+    background: darkblue !important;
+}
+
+img {
+  object-fit: none !important;
+  object-position: 100% 0% !important;
+  object-position: 1 1 !important;
+}

@@ -1,0 +1,52 @@
+---
+title: "a"
+author: |
+  **T.J. Del Santo O'Neill**
+  </br><i class="fa fa-envelope"></i> <tt>t.j.delsantooneill@qmul.ac.uk</tt>
+  </br><i class="fa fa-github" style="font-size:24px"></i> <tt>https://github.com/ThomasDelSantoONeill</tt>
+  </br>
+  </br>
+  *Supervisors:* Dr. **Axel G. Rossberg**<sup>1</sup> and Dr. **Robert B. Thorpe**<sup>2</sup>
+  </br>
+  <i class="fa fa-university"></i><sup>1</sup> <a href="https://www.qmul.ac.uk/sbcs/staff/axelrossberg.html">QMUL</a>
+  </br>
+  <i class="fa fa-university"></i><sup>2</sup> <a href="https://www.cefas.co.uk/about-us/people/robert-b-thorpe/">CEFAS</a>
+date: "21<sup>st</sup> Feb. 2020"
+output: ioslides_presentation
+css: style.css
+logo: QMLogo.svg
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Structure of the talk
+
+* Whats is it that I do?
+  * Marine ecosystems
+  * Modelling
+  * Management advice
+* What have I done so far?
+* Medium-term espectations
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
