@@ -1,6 +1,6 @@
 .gdbar img {
-  width: 300px !important;
-  height: 100px !important;
+  width: 200px !important;
+  height: 60px !important;
   color: red !important;
 }
 
@@ -11,10 +11,4 @@
 
 aside.gdbar {
     background: darkblue !important;
-}
-
-img {
-  object-fit: none !important;
-  object-position: 100% 0% !important;
-  object-position: 1 1 !important;
 }
