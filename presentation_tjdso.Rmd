@@ -1,5 +1,5 @@
 ---
-title: "a"
+title: "Title"
 author: |
   **T.J. Del Santo O'Neill**
   </br><i class="fa fa-envelope"></i> <tt>t.j.delsantooneill@qmul.ac.uk</tt>
@@ -32,12 +32,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Flash intro
 <center>
-```{r message=FALSE, warning=FALSE, fig.height=4}
+```{r message=FALSE, warning=FALSE}
 knitr::include_graphics("network.svg")
 ```
 </center>
 </br>
+<p align="right">
 <font size="2"><em>"all models are wrong, but some are useful" (<a href="https://www.sciencedirect.com/science/article/pii/B9780124381506500182">Box, 1979</a>).</em></font>
+</p>
 
 ## Maximum Sustainable Yield
 <center>
@@ -45,10 +47,56 @@ knitr::include_graphics("network.svg")
 knitr::include_graphics("yield.svg")
 ```
 </center>
+<p align="right">
 <font size="2">Modified from <a href="https://science.sciencemag.org/content/205/4403/267?casa_token=sxHj3fIlrlsAAAAA:sbeA6VQTkxzOMXnFf1zYHUiw8W0BLKVOcqTttpsHpcqV2t2gh6PO2OnDBjzWrijsn2EJH_EYDYmf2g">May <em>et al</em>., 1979</a>. <em>Science</em>, 205 (4403), 267-277.</font>
+</p>
 
-## 
+## Nash equilibrium?
+<center>
+```{r message=FALSE, warning=FALSE, fig.height=1}
+knitr::include_graphics("ne.svg")
+```
+</center>
+</br>
+</br>
+<p align="right">
+<font size="2">From <a href="https://academic.oup.com/icesjms/article/73/10/2499/2647108">Farcas, A. and Rossberg, A. G. 2016.</a>. <em>ICES J. Mar. Sci.</em>, 73 (10), 2499-2508.</font>
+</p>
 
+## Model selection
+<center>
+```{r message=FALSE, warning=FALSE, fig.height=1}
+knitr::include_graphics("model.svg")
+```
+</center>
+<p align="right">
+<font size="2">To play around with the package go to <a href="https://github.com/NOAA-EDAB/Rpath"><i class="fa fa-github" style="font-size:24px"></i> NOAA-EDAB/Rpath</a>.</font>
+</p>
+
+## `Rpath` *vs* `ECOPATH`
+<center>
+```{r message=FALSE, warning=FALSE, fig.height=1}
+knitr::include_graphics("rpath.svg")
+```
+</center>
+
+## `Rsim` *vs* `ECOSIM`
+<center>
+```{r message=FALSE, warning=FALSE, fig.height=1}
+knitr::include_graphics("rsim.svg")
+```
+</br>
+&darr;
+</br>
+$\overline{Error(\%)}=-0.025$ with no external abiotic forcing (*e.g.* fishing effort or egg production time series).
+</center>
+## Medium term goals
+
+* To wrap a 2<sup>nd</sup> functional iteration of the `Rpath` package;
+* To compute NE MSY solutions for the North Sea ecosystem with `Rpath2 (ecopaRth?)` to assess tradeoffs between current management practices (*i.e.* single species management) and the so-called Ecosystem-Based Fisheries Management to ultimately find optimal mixtures of stocks; and
+* To, perhaps, evaluate the predictability of these optima and their required management intensity taking into consideration inherent uncertainties.
+
+</br>
 <p id="demo"></p>
 
 <script>
