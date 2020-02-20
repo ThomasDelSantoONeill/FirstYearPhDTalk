@@ -1,0 +1,23 @@
+id,group,type,type.lebel,biomass
+1,Grey Seal,1,Living,0.006
+2,Fish Feeding Birds,1,Living,0.002
+3,Juv Cod,1,Living,0.35371857
+4,Ad Cod,1,Living,0.33
+5,Juv Herring,1,Living,1.021156073
+6,Ad Herring,1,Living,2.72
+7,Juv Sprat,1,Living,4.691883312
+8,Ad Sprat,1,Living,4.48
+9,Juv Flounder,1,Living,0.381596262
+10,Ad Flounder,1,Living,0.463
+11,Saduria Entemon,1,Living,2
+12,Mytilus Sp,1,Living,10
+13,Macoma Balthica,1,Living,45
+14,Other Macrozoobenthos,1,Living,11.385
+15,Meiobenthos,1,Living,6.8
+16,Mysids,1,Living,2.201786909
+17,Other Zooplankton,1,Living,4.006379
+18,Pseudocalanus Sp,1,Living,1.930314
+19,Acartia Sp,1,Living,3.026768
+20,Temora Sp,1,Living,2.270881
+21,Phytoplankton,2,Producer,7.05
+22,Detritus,3,Detritus,1644.81

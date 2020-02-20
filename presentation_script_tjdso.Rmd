@@ -11,5 +11,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Slide 3
 
+In a nutshell, my research interests lie on the management of exploited marine ecosystems mainly through the harvesting of their biotic component. By ecosystem, I mean ecological networks or populations of living organisms that interact with each other. For those familiar with aquatic ecosystems, it is impractical to go and count fish as we would do with trees on land. Also the ocean has a significant $Z$ coordinate compared to terrestrial systems and habitat fragmentation is mainly due to the presence of continents. Therefore, to be able to gain insights on how they work their abstraction into models is necessary. Even though *all models are wrong*, most of them can be extremely useful to estimate how ecosystems are going to evolve in time $t=\{10,100,1000\}_{years}$ when subjected to anthropogenic perturbations (like fishing) or when forced by abiotic factors. This feature of forward simulation makes them incredibly appealing for management advice to ultimately drive policy making decisions. 
 
+## Slide 4
+
+SS vs MS MSY + NE
+
+## Slide 5
+
+Model selection
+
+## Slide 6
+
+Some results
+
+## Slide 7
+
+Medium-term goals
+
+## Slide 8
+
+Thank you
 

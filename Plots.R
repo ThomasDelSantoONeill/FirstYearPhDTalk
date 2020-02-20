@@ -2,30 +2,20 @@ getwd()
 setwd("C:/Users/delsa/Documents/FirstYearPhDTalk")
 library(igraph)
 library(plot3D)
-diet.edges <- data.frame(from = Rsim.model$params$PreyFrom[3:length(Rsim.model$params$PreyFrom)],
-                         to = Rsim.model$params$PreyTo[3:length(Rsim.model$params$PreyTo)],
-                         weigth = Rsim.model$params$PreyPreyWeight[3:length(Rsim.model$params$PreyPreyWeight)])
-diet.edges <- subset(diet.edges, subset = diet.edges[,1]>=1)
-diet.nodes <- data.frame(id = 1:22,
-                         group = c("Grey Seal", "Fish Feeding Birds", "Juv Cod", "Ad Cod", "Juv Herring",
-                                   "Ad Herring", "Juv Sprat", "Ad Sprat", "Juv Flounder", "Ad Flounder",
-                                   "Saduria Entemon", "Mytilus Sp", "Macoma Balthica", 
-                                   "Other Macrozoobenthos", "Meiobenthos", "Mysids", "Other Zooplankton",
-                                   "Pseudocalanus Sp", "Acartia Sp", "Temora Sp", "Phytoplankton",
-                                   "Detritus"),
-                         type = c(rep(1, 20), 2, 3),
-                         type.lebel = c(rep("Living", 20), "Producer", "Detritus"),
-                         biomass = Rsim.model$params$B_BaseRef[2:23])
-write.csv(diet.edges, "diet.edges.csv")
-write.csv(diet.nodes, "diet.nodes.csv")
+diet.nodes <- read.csv("diet.nodes.csv", header = TRUE)
+diet.edges <- read.csv("diet.edges.csv", header = TRUE)
 net <- graph_from_data_frame(d = diet.edges, vertices = diet.nodes, directed = TRUE)
+lay <- layout_as_tree(net, root = c(21,22), flip.y = FALSE)
+lay[,2] <- c(4.247239, 4, 3.970763, 4.117395, 3.044445, 3.166236, 3, 3, 3.406122, 3.175714,
+             3.44682, 2, 2, 2.451247, 2.020408, 2.444445, 2, 2, 2, 2, 1, 1)
 cols <- c(rgb(70/255,130/255,180/255, alpha = 0.75), 
           rgb(34/255,139/255,34/255, alpha = 0.75),
           rgb(255/255,215/255,0/255, alpha = 0.75))
 V(net)$color <- cols[V(net)$type]
-plot(net, edge.arrow.size = 0.5, 
+plot(net, edge.arrow.size = 0.5,
+     layout = lay,
      vertex.label = NA,
-     margin = c(-0.5,-0.5,-0.5,-0.5))
+     margin = c(0,0,0,0))
 # Equilibrium yields
 # Krill
 by_fac <- 1/30
@@ -115,7 +105,11 @@ krill <- matrix(unlist(result_1i), nrow = length(F1),  ncol = length(F1))
 whales <- matrix(unlist(result_2i), nrow = length(F2),  ncol = length(F2))
 fields::image.plot(x = seq(0, max(krill), length.out = nrow(krill)),
                    y = seq(0, max(whales), length.out = nrow(whales)),
-                   z =(matrix(unlist(result_1i), nrow = length(F1),  ncol = length(F1))+matrix(unlist(result_2i), nrow = length(F2),  ncol = length(F2))), col = cm.colors(30), 
+                   z =(matrix(unlist(result_1i), nrow = length(F1),
+                              ncol = length(F1))+matrix(unlist(result_2i), 
+                                                        nrow = length(F2),  
+                                                        ncol = length(F2))), 
+                   col = terrain.colors(200), 
                    xlab = expression(paste("Krill Yield Y"[1])),
                    ylab = expression(paste("Whale Yield Y"[2])))
 lines(unlist(result_1i), unlist(result_2i), col = rgb(0,0,0, alpha = 0.1))

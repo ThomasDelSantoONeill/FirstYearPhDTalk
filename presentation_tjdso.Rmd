@@ -24,13 +24,13 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Structure of the talk
 
 * What is it that I do?
-  * Rationale
+  * Research interest
   * Current strategy
 * What have I done so far?
   * `rep("debug",` $\infty$`)`
 * Medium-term espectations
 
-## Flash intro
+## Fisheries management
 <center>
 ```{r message=FALSE, warning=FALSE}
 knitr::include_graphics("network.svg")
@@ -38,7 +38,7 @@ knitr::include_graphics("network.svg")
 </center>
 </br>
 <p align="right">
-<font size="2"><em>"all models are wrong, but some are useful" (<a href="https://www.sciencedirect.com/science/article/pii/B9780124381506500182">Box, 1979</a>).</em></font>
+<font size="2"><em>"All ecological models are wrong, but some are useful."</em> (<a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2656.12949"> Stouffer, D. B., 2019</a>. <em> J Anim Ecol</em> 88 (2), 192-195).</font>
 </p>
 
 ## Maximum Sustainable Yield
